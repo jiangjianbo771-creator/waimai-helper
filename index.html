@@ -5,40 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>外卖优惠助手</title>
 <link rel="stylesheet" href="style.css">
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K7YBMPQVL"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
 gtag('config', 'G-0K7YBMPQVL');
 </script>
-
 </head>
-
 <body>
-
 <div class="container">
-
 <div class="banner">
     <div class="banner-title">
         🧧 美团红包助手
     </div>
-
-    <div class="banner-subtitle">
-        最高可领18元红包
-    </div>
-
-    <div class="banner-tip">
-        每日实时更新 · 免费领取
-    </div>
+<div class="banner-subtitle">
+    最高可领18元红包
 </div>
-
-<div class="update">
-🔥 今日更新：2026-06-20
+<div class="banner-tip">
+    每日实时更新 · 免费领取
 </div>
-
+</div>
+<div class="update" id="todayDate">
+🔥 今日更新
+</div>
+<p style="text-align:center;color:#666;font-size:14px;margin-bottom:20px;">
+🎉 已帮助10000+用户领取优惠
+</p>
 <a class="card" href="https://wxaurl.cn/TjCz4OEeuKq?cq=redirectUrl%3D%252Fouter_packages%252Fpepper%252Fpages%252FgoodDetail%252Findex%253Fdid%253D1198713986%2526fromQmfxShare%253Dtrue%26p%3DZbTDj7xzYOVC%26t%3D1%26c%3D2" target="_blank">
     <div>
         <h2>🔥 🐸 蛙来哒双人餐</h2>
@@ -47,30 +40,32 @@ gtag('config', 'G-0K7YBMPQVL');
     </div>
     <div class="arrow">→</div>
 </a>
-
 <a class="card" href="https://wxaurl.cn/TRwDUHOzu0q?cq=type%3DDIRECT%26fromQmfxShare%3Dtrue%26webviewUrl%3Dhttps%253A%252F%252Fclick.meituan.com%252Ft%253Ft%253D1%2526c%253D2%2526p%253D3gNqgrxzPhJ_%26t%3D1%26c%3D2%26p%3D3gNqgrxzPhJ_" target="_blank">
     <div>
-        <h2>618大促活动</h2>
+        <h2>🎉 618大促活动</h2>
         <p>美团618 名酒手机抽免单</p>
         <span class="tag">最高领1888元券包</span>
     </div>
     <div class="arrow">→</div>
 </a>
-
 <a class="card" href="https://wxaurl.cn/TRwDUHOzu0q?cq=type%3DDIRECT%26fromQmfxShare%3Dtrue%26webviewUrl%3Dhttps%253A%252F%252Fclick.meituan.com%252Ft%253Ft%253D1%2526c%253D2%2526p%253D8Qa2-7xzMJPa%26t%3D1%26c%3D2%26p%3D8Qa2-7xzMJPa" target="_blank">
     <div>
-        <h2>🛍️周六出门逛吃逛吃</h2>
+        <h2>🛍️ 周六出门逛吃逛吃</h2>
         <p>🏷️ 大牌美食2折起</p>
         <span class="tag">🧧 百元红包随手领</span>
     </div>
     <div class="arrow">→</div>
 </a>
-
 </div>
-<a href="https://wxaurl.cn/TRwDUHOzu0q?cq=type%3DDIRECT%26fromQmfxShare%3Dtrue%26webviewUrl%3Dhttps%253A%252F%252Fclick.meituan.com%252Ft%253Ft%253D1%2526c%253D2%2526p%253DIyL_j7xzL0E7%26t%3D1%26c%3D2%26p%3DIyL_j7xzL0E7"
-   class="floating-btn"
-   target="_blank">
-   🧧 领取红包
-</a>
+
+🧧 领取红包
+<script>
+const today = new Date();
+const year = today.getFullYear();
+const month = String(today.getMonth() + 1).padStart(2, '0');
+const day = String(today.getDate()).padStart(2, '0');
+document.getElementById("todayDate").innerHTML =
+`🔥 今日更新：${year}-${month}-${day}`;
+</script>
 </body>
 </html>
