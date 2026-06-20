@@ -99,28 +99,24 @@ h1 {
     color: white;
     font-weight: 600;
 }
-.floating-btn {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+.floating-btn{
+    position:fixed;
+    right:20px;
+    bottom:calc(90px + env(safe-area-inset-bottom));
 
-    background: #ff5a00;
-    color: white;
+    background:#ff6b00;
+    color:#fff;
 
-    padding: 14px 22px;
+    padding:14px 22px;
+    border-radius:999px;
 
-    border-radius: 999px;
+    text-decoration:none;
+    font-weight:700;
 
-    font-size: 16px;
-    font-weight: bold;
+    box-shadow:0 8px 24px rgba(255,107,0,.35);
 
-    text-decoration: none;
-
-    box-shadow: 0 8px 20px rgba(255,90,0,.3);
-
-    z-index: 999;
+    z-index:9999;
 }
-
 .floating-btn:hover {
     transform: translateY(-2px);
 }
